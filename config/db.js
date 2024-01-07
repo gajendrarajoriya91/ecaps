@@ -2,8 +2,8 @@ const mongoose = require('mongoose');
 const { MONGO_URL } = require('./envVariables')
 
 mongoose.connect(MONGO_URL, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
+  // useNewUrlParser: true,
+  // useUnifiedTopology: true,
 });
 
 const db = mongoose.connection;
