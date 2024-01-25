@@ -22,8 +22,8 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Run ecap app
-        run: npm start
+      # - name: Run ecap app
+      #   run: npm start
 
       - name: Deploy to Heroku
         uses: akhileshns/heroku-deploy@v3.12.12
