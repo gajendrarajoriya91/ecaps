@@ -28,6 +28,6 @@ jobs:
       - name: Deploy to Heroku
         uses: akhileshns/heroku-deploy@v3.12.12
         with:
-          heroku_api_key: 2604bc34-82fc-41b2-be2f-766173d4cc94
-          heroku_app_name: ecap
-          heroku_email: gajendrarajoriya91@gmail.com
+          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+          HEROKU_APP_NAME: ecap
+          HEROKU_EMAIL: ${{ secrets.HEROKU_EMAIL }}
